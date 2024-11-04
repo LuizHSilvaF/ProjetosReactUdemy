@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ManageData = () => {
-    const someData = 10;
+    const [someData, setSomeData] = useState(10);
 
     const [number, setNumber] = useState(15);
 
@@ -11,7 +11,7 @@ const ManageData = () => {
     <div>
         <div>
         <p>Valor: {someData}</p>
-        <button onClick={() => (someData = 15)}>Mudar Variável</button>
+        <button onClick={() => setSomeData(15)}>Mudar Variável</button>
         </div>
         <div>
             <p>Valor: {number}</p>
