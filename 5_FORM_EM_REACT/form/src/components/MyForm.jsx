@@ -53,7 +53,7 @@ const MyForm = ({user}) => {
             <label>
                 <span>Função no sistema</span>
                 <select name="role" onChange={(e) => setRole(e.target.value)} value={role}>
-                    <option value="selecione" disabled>Selecioneee</option>
+                    <option value="selecione" disabled>Selecionee</option>
                     <option value="user">Usuário</option>
                     <option value="editor">Editor</option>
                     <option value="admin">Admin</option>
